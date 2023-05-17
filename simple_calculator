@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int X,Y;
+    cin>>X>>Y;
+    cout<<X<<" + "<<Y<<" = "<<(long long)X+Y<<endl;
+    cout<<X<<" * "<<Y<<" = "<<(long long)X*Y<<endl;
+    cout<<X<<" - "<<Y<<" = "<<(long long)X-Y<<endl;
+    return 0;
+}
