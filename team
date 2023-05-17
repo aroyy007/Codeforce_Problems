@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,x=0,y;
+    cin>>n;
+    while(n--)
+    {
+        y=0;
+        int a[3];
+        for(int i = 0; i<3 ; i++)
+        {
+            cin>>a[i];
+            if(a[i]==1)
+            {
+                y++;
+            }
+        }
+        if(y>=2)
+        {
+            x++;
+        }
+    }
+    cout<<x<<endl;
+}
