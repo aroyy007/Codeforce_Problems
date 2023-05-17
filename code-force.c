@@ -1,22 +1,19 @@
-#include <stdio.h>
-#include <string.h>
+#include <iostream>
+#include <cstring>
+using namespace std;
 
 int main() {
-
     int t;
-    scanf("%d", &t);
-
+    cin >> t;
 
     for (int i = 0; i < t; i++) {
-
         char c;
-        scanf(" %c", &c);
-
+        cin >> c;
 
         if (strchr("codeforces", c) != NULL) {
-            printf("YES\n");
+            cout << "YES" << endl;
         } else {
-            printf("NO\n");
+            cout << "NO" << endl;
         }
     }
 
