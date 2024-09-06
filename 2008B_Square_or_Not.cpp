@@ -47,39 +47,26 @@ int main()
 {
     optimize();
 
-    int t;
+    ll t;
     cin >> t;
     while (t--)
     {
         ll n;
         cin >> n;
+
         string s;
         cin >> s;
 
-        ll sq = sqrt(n);
+        ll c0 = count(s.begin(), s.end(), '0');
+        ll c1 = count(s.begin(), s.end(), '1');
 
-        if (sq * sq != n)
+        if (sqrt(c0) * sqrt(c0) == c0 && (sqrt(c0) - 1) * 4 + 8 == c1)
         {
-            cout << "No" << endl;
+            cout << "YES" << endl;
         }
         else
         {
-            int count1 = count(s.begin(), s.end(), '1');
-            int count0 = n - count1;
-
-            
-            if (count1 == 4 && n == 4)
-            {
-                cout << "Yes" << endl;
-            }
-            else if (count1 == n || count0 == n)
-            {
-                cout << "No" << endl;
-            }
-            else
-            {
-                cout << "Yes" << endl;
-            }
+            cout << "NO" << endl;
         }
     }
     return 0;
